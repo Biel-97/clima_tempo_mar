@@ -2,7 +2,6 @@ footer {
     color: whitesmoke;
     text-align: center;
     background-color: rgb(255, 255, 255, 0.2);
-    border-top: 2px solid rgb(255, 255, 255, 0.1);
     height: 80px;
     display: flex;
     flex-direction: column;
@@ -10,12 +9,12 @@ footer {
     bottom: 0px;
     width: 100%;
   }
-  footer div {
+  footer > div {
     align-self: center;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-top: 13px;
+    margin-top: 20px;
     width: 12rem;
     /* margin: 0px; */
     /* padding: 0px; */

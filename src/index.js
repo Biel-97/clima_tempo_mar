@@ -13,7 +13,7 @@ ReactDOM.render(
 
 
 
-    <footer> <span className="nome">Desenvolvido por Ga<span className="red">b</span>r<span className="red">iel</span> P. Oliveira</span>
+    <footer> <span className="nome">Desenvolvido por Gabriel P. Oliveira</span>
     
       <div className="d-flex align-self-center">
         <span><a href="https://github.com/Biel-97" target="_blank" className="fa fa-github aspangn-content-start" aria-hidden="true"></a></span>
