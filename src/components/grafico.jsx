@@ -93,7 +93,11 @@ function Grafico(props) {
                 }
             }
         });
+        
+        if (window.innerWidth <= 450) {
+            document.querySelector('.graph').style.width = (window.innerWidth - 100) + 'px'
 
+        }
     }, [])
 
 
@@ -102,7 +106,8 @@ function Grafico(props) {
     return (
         <div className="graph">
 
-            <canvas className="myChart" ref={graph} width="500" height="500"></canvas>
+            <canvas className="myChart" ref={graph} width="400" height="400" aria-label="grafico" ></canvas>
+            
         </div>
     )
 }

@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+<p> Para dar uma olhada na aplicação, click <a href="https://biel-97.github.io/clima_tempo_mar/" target="_blank">aqui.</a></p>
+<h2>Sobre</h2> 
+<p><i>"Usar meu conhecimento para melhorar e testar minhas habilidades como programador".:rocket:</i></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<p>Esse projeto faz parte do meu portfolio, então, fique à vontade para entrar em contato para críticas ou feedback sobre o código, estrutura ou outro motivo que me ajude a me tornar um melhor programador!</p>
 
-In the project directory, you can run:
+<span>E-mail: <a>gabriel.pso100@gmail.com</a ></span><br>
+<span><a target="_blank" href="https://www.linkedin.com/in/gabriel-97-oliveira">linkedin</a></span><br>
+<h2>Observações</h2>
 
-### `npm start`
+<p>Foi utilizada a API disponibilizada pela cptec (Centro de Previsão de Tempo e Estudos Climáticos), você pode a conferir clicando <a target="_blank" href="http://servicos.cptec.inpe.br/XML/">aqui</a></p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h2>Funcionalidades</h2>
 
-### `npm test`
+•:partly_sunny: Retorna as informações climáticas de qualquer município do território brasileiro dos próximos 6 dias em formato de gráfico.  <br>
+•:ocean: Caso o município pesquisado seja litorâneo, retorna as condições do mar, como tamanho das ondas, agitação e vento. <br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3>Pré-Requisitos</h3>
+<p>Para iniciar esta aplicação, é necessário ter o NODEJS 8+ instalado.</p>
 
-### `npm run build`
+<h3>Instalando</h3>
+<h4>Clonando o repositório</h4><br>
+<span>$ git clone https://github.com/Biel-97/clima_tempo_mar</span><br>
+<span>$ cd clima_tempo_mar</span><br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h3>Instalando dependências</h3><br>
+<span>$ yarn</span><br>
+<i>OU</i><br>
+<span>$ npm install</span><br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h2>Conectando na aplicação</h2><br>
+<p>Por padrão, a aplicação irá rodar na porta 3000, a URL de acesso então será:</p>
+<span>App_URL:  http://localhost:3000/</span><br>
+<i>OU</i><br>
+<span>App_URL=http://SEU_IP_LOCAL:3000/</span><br>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<h2>Iniciando</h2>
+<p>Com todas as dependências instaladas, você já pode iniciar a aplicação:</p>
+<h3>Dentro da pasta: </h3>
+<span>$ npm start</span>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h2>Criado com</h2>
+<span>• React JS </span><br>
+<span>• Fontawesome</span><br>
+<span>• axios</span><br>
+<span>• chart.js</span><br><br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<h2>Obrigado!</h2>
 
-## Learn More
+<p>Duvidas ou sugestões fique à vontade para entrar em contato:</p>
+<span>E-mail: <a>gabriel.pso100@gmail.com</a ></span><br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<span><a href ="http://www.linkedin.com/in/gabriel-97-oliveira" target="_blank">LinkedIn</a> </span><br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+:thumbsup:

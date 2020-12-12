@@ -1,12 +1,14 @@
 import React,{useState, useEffect} from 'react';
 import Grafico from './grafico'
 
+import './form.css'
 
 const axios = require('axios')
 const parser = new DOMParser();
 
 const xmlDoc = data => parser.parseFromString(data, "text/html");
-const cidade = data => data.replace(/( )+/g, '%20').toLowerCase()
+const cidade = data => data.replace(/( )+/g, '%20').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+
 
 const formatarData = data => new Date(data).toLocaleDateString('pt-BR', { timeZone: 'UTC' });
 
@@ -27,9 +29,9 @@ function getDias(ct_info) {
   return dias
 }
 
-function Componente() {
+function Main() {
   const [search, setSearch] = useState('');
-  const [query, setQuery] = useState('rio de janeiro');
+  const [query, setQuery] = useState('Brasilia');
   const [info, setInfo] = useState({})
   const [graph, setGraph] = useState()
 
@@ -77,7 +79,7 @@ function Componente() {
     }
 
     fetchData()
-    
+
   }, [query])
 
 
@@ -86,38 +88,46 @@ function Componente() {
       <form onSubmit={e => {
         e.preventDefault()
         setQuery(search)
-
       }}>
-        <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Buscar municipio." />
-        <button type="submit">Buscar</button>
 
-        <span className="atualizacao">
-          <h3>Ultima atualização</h3>
-          <h5>{info.atualizacao}</h5>
-        </span>
+        <div className="form">
+          <input type="text" name="municipio" required value={search} onChange={(e) => setSearch(e.target.value)}/>
+          <label htmlFor="municipio" className="label-name">
+            <span className="content-name">Municipio / Cidade</span>
+          </label>
+        </div>
+        <button type="submit">Buscar</button>
 
       </form>
 
+      <div className="cidade">
+        <div className="atualizacao">
+          <h3>Ultima atualização</h3>
+          <h4>{info.atualizacao}</h4>
+        </div>
 
-      <div className="teste">
+        <div className="local">
+          <h3>{info.nome}</h3>
+          <h4>{info.uf}</h4>
+        </div>
+      </div>
+
+      <div className="infos">
         {
           Object.entries(info).map((e, key) => {
-            if (e[1] !== 'undefined m' && e[1] !== 'undefined' && e[1] !== 'undefined km' && e[0] !== 'atualizacao' && e[0] !== 'dias') {
+            if (e[1] !== 'undefined m' && e[1] !== 'undefined' && e[1] !== 'undefined km' && e[0] !== 'atualizacao' && e[0] !== 'dias' && e[1] !== "00/00/0000 00:00:00" && e[0] !== 'nome' && e[0] !== 'uf') {
               return <div key={key} className="col">
                 <h5>{e[0]}</h5>
-                <span>{e[1]}</span>
+                <h4>{e[1]}</h4>
               </div>
             }
           })
-          // info.nome
         }
       </div>
       {graph}
-
     </>
   );
 }
 
 
-export default Componente
-
+export default Main

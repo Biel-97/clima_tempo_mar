@@ -16,9 +16,9 @@ ReactDOM.render(
     <footer> <span className="nome">Desenvolvido por Gabriel P. Oliveira</span>
     
       <div className="d-flex align-self-center">
-        <span><a href="https://github.com/Biel-97" target="_blank" className="fa fa-github aspangn-content-start" aria-hidden="true"></a></span>
-        <span><a href="https://codepen.io/Biel_" target="_blank" className="fa fa-codepen aspangn-content-center" aria-hidden="true"></a></span>
-        <span><a href="https://www.linkedin.com/in/gabriel-97-oliveira" target="_blank" className="fa fa-linkedin-square aspangn-content-end" aria-hidden="true"></a></span>
+        <span><a href="https://github.com/Biel-97" target="_blank" className="fa fa-github aspangn-content-start" aria-hidden="true" rel="noreferrer"></a></span>
+        <span><a href="https://codepen.io/Biel_" target="_blank" className="fa fa-codepen aspangn-content-center" aria-hidden="true" rel="noreferrer"></a></span>
+        <span><a href="https://www.linkedin.com/in/gabriel-97-oliveira" target="_blank" className="fa fa-linkedin-square aspangn-content-end" aria-hidden="true" rel="noreferrer"></a></span>
       </div>
     </footer>
   </React.StrictMode>,

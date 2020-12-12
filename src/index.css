@@ -1,79 +1,87 @@
 *{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
   color: white;
-}
-button{
-  color: black;
-}
-body, html, #root, #root {
-  height: 100%;
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+html, body, #root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+body {
+  background: url('/src/components/img/big-img.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 #root{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  align-items: center; 
+  align-items: center;
 }
-body {
-  background-color: rgb(0, 6, 26);
-}
-.teste{
+
+
+.infos{
   display: flex;
   justify-content: center;
-  height: 100%;
-  width: 100%;
-  margin: 50px 200px;
+  margin: 5px 0px;
   flex-wrap: wrap;
 }
-.teste span {
-  background-color: rgba(97, 255, 150, 0.2);
-  align-self: center;
-  height: 50%;
-  transition: all 400ms;
-  margin: 0px;
-  font-weight: 900;
-  font-size: larger;
-  border-top: 1px solid  rgba(97, 255, 150, 0.2);
-}
-.teste h5 {
+
+.infos h5 {
   align-self: center;
 }
-.col h5 {
-  margin: 5px 0px;
-}
-.col span {
-  padding: 15px;
 
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 150px;
-}
 
 .atualizacao h5, .atualizacao h3{
   margin: 15px 0px 0px 0px;
 }
-.atualizacao{
+
+
+.col {
+  margin: 5px;
+}
+.col h5 {
+  font-weight: 650;
+  font-size: larger;
+  margin: 5px 0px;
+}
+.col h4 {
+  padding: 10px;
+  font-weight: 500;
+
+}
+
+.cidade, .local, .atualizacao, .col {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
-input{
-  margin:50px 0px 10px 0px;
-  width: 200px;
-  color: black;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
+.cidade h5, .cidade h3{
   margin: 5px;
-  justify-content: center;
-  border: 1px solid  rgba(255, 97, 97, 0.2);
+}
+.local, .col{
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 1px 2px 15px white;
+}
+
+.graph{
+  background-color: rgb(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
 }
