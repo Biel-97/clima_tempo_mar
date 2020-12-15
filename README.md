@@ -1,4 +1,3 @@
-<p> Para dar uma olhada na aplicação, click <a href="https://biel-97.github.io/clima_tempo_mar/" target="_blank">aqui.</a></p>
 <h2>Sobre</h2> 
 <p><i>"Usar meu conhecimento para melhorar e testar minhas habilidades como programador".:rocket:</i></p>
 
